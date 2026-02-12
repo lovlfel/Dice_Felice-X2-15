@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id=":1Wxe+,=%vJa7k=s].K+">List</variable><variable id="e,?G2n7(vQz]s$I6H#cn">myImage</variable></variables><block type="function_definition" id="98~?}thLgTD=Q:-I6aKg" x="0" y="0"><mutation name="SetDicePattern" functionid="k~O*,re*6%+Uron=Q2$q"></mutation><field name="function_name">SetDicePattern</field><statement name="STACK"><block type="variables_set" id="kIY1Uh.M@X;Ll]=6P*pf"><field name="VAR" id=":1Wxe+,=%vJa7k=s].K+">List</field><value name="VALUE"><shadow type="math_number" id="j8|#L_m3Hd`JGhu3wkG2"><field name="NUM">0</field></shadow><block type="lists_create_with" id="dhyW1Z04p_j;Y$mD+;Wj" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><block type="device_build_image" id="DPzc$dL6clV1Cfp7J0O5"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD1"><block type="device_build_image" id="Kvs!Ils};5c$eJ#d1FXF"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD2"><block type="device_build_image" id="zR[5;~/x4_I{$.i:20ip"><field name="LEDS">`
+        . . . . . 
+        . . . # . 
+        . . # . . 
+        . # . . . 
+        . . . . .
+        `</field></block></value><value name="ADD3"><block type="device_build_image" id="i]m|aIykq59ZD1[dnA~;"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><value name="ADD4"><block type="device_build_image" id="@=hGsc(Tw;+%Ecy!7cqI"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><value name="ADD5"><block type="device_build_image" id="4{jFSq*2r=bOf;6s|B|u"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . # . # . 
+        . # . # . 
+        . . . . .
+        `</field></block></value></block></value></block></statement></block><block type="pxt-on-start" id="d|vQpG~nA~iX#DWIF+Wp" x="527" y="39"><statement name="HANDLER"><block type="function_call" id="u=^4(Y)Pye7T/#dY(~Gr"><mutation name="SetDicePattern" functionid="k~O*,re*6%+Uron=Q2$q"></mutation><next><block type="function_call" id="]E|NoSq!cFIX:Nu0Yq`Y"><mutation name="RollDice" functionid="}Pz24TwVWsVUncnYj^8:"></mutation></block></next></block></statement></block><block type="function_definition" id="59Q}c(`^,6Lo.]aE4Uj$" x="786" y="28"><mutation name="RollDice" functionid="}Pz24TwVWsVUncnYj^8:"></mutation><field name="function_name">RollDice</field><statement name="STACK"><block type="device_show_image_offset" id="kQIh0i[gDwFJhbZLEQ1Y"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="lists_index_get" id="B}R?*Hw3ZV#S5ligWHoe"><value name="LIST"><block type="variables_get" id="G@FrYJy4GqEli57[wWtw"><field name="VAR" id=":1Wxe+,=%vJa7k=s].K+">List</field></block></value><value name="INDEX"><shadow type="math_number" id="66n+wBqy?dn``=Oi%nnS"><field name="NUM">0</field></shadow><block type="device_random" id="F*T|6?5!Y45GJvGw}N8K"><value name="min"><shadow type="math_number" id=":Gli;5RtzT;B%)e|R8K`"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="7^oE+zr%9XPR0WjPLXbk"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="6}K%$yg5E4|7GfaCS]]W"><field name="NUM">0</field></shadow></value><value name="interval"><shadow type="math_number" id="NfUxjneXX`Rry*t@+uBe"><field name="NUM">400</field></shadow></value></block></statement></block><block type="device_gesture_event" id="r.PC}C$}quxw0A3{~_vf" x="520" y="225"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="function_call" id="/5%iJGbDwxJ$^zJA6QhS"><mutation name="RollDice" functionid="}Pz24TwVWsVUncnYj^8:"></mutation></block></statement></block></xml>
